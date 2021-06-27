@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LocalStorage - class 13</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header></header>
+  <main>
+    <form id="order-form">
+      <fieldset>
+        <legend>Order Form</legend>
+
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text"  name="name" />  
+        </div>
+
+        <div class="form-group">
+          <label>Size:</label>
+          <select name="size">
+            <option value="6">6 oz</option>
+            <option value="12">12 oz</option>
+            <option value="16">16 oz</option>
+            <option value="20">20 oz</option>
+            <option value="32">32 oz</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label>Milk</label>
+          <select name="milk">
+            <option value="regular">Regular</option>
+            <option value="almond">Almond</option>
+            <option value="coconut">Coconut</option>
+            <option value="none">None</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label>Hot: </label>
+          <input name="isHot" type="checkbox" />
+        </div>
+        
+        <div class="form-group">
+          <label>Drink</label>
+          <select name="drinkType">
+            <option value="latte">Latte</option>
+            <option value="blackCoffee">Black Coffee</option>
+            <option value="coldBrew">Cold Brew</option>
+          </select>
+        </div>
+
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+
+    <section class="previous-orders">
+      <h3>Previous Orders</h3>
+      <ul id="orders"></ul>
+    </section>
+  </main>
+  <footer></footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
+
